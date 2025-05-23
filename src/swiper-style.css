@@ -1,0 +1,23 @@
+.swiper {
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    width: 224px;
+    height: 72px;
+  }
+
+.swiper-wrapper {
+ display: flex;
+}
+
+.swiper-button-next {
+color: rgb(255, 255, 255);
+}
+
+
+@media  (max-width: 320px) {
+    .swiper {
+        overflow: hidden;
+    }
+}

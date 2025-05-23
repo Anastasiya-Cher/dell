@@ -1,0 +1,186 @@
+
+html {
+    width: 768px;
+    box-sizing: border-box;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 768px;
+    height: 88;
+    padding: 24;
+    margin-bottom: 88px;
+    margin-top: 24px;
+}
+
+.menu__menu {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+}
+
+.menu__gps {
+    position: absolute;
+    left: 106.73px;
+    top: 18.59px;
+}
+
+.menu__call {
+    position: absolute;
+    left: 454px; 
+    top: 24px;
+}
+
+.menu__chat {
+    position: absolute;
+    left: 510px;
+    top: 24px;
+}
+
+.menu__profile {
+    position: absolute;
+    left: 566px;
+    top: 24px;
+}
+
+.menu__repair {
+    position: absolute;
+    left: 648px;
+    top: 24px;
+}
+
+.menu__check {
+    position: absolute;
+    left: 704px;
+    top: 24px;
+}
+
+.hidden-text{
+    max-height: 160px;
+    overflow: hidden;
+}
+
+.content__photo-logo {
+    float: right;
+    max-width: 360px;
+    object-fit: cover;
+}
+
+.dop-menu__nav:hover {
+    border: solid 2px rgba(184, 255, 236, 1);
+    border-radius: 6px;
+}
+
+.dop-menu {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(126, 126, 130, 1);
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+h1 {
+    background-image: url(icon/marker.svg);
+    background-repeat: no-repeat;
+    padding-left: 24px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.content__input-checkbox {
+    display: none;
+}
+
+.content__input-checkbox:checked ~ .hidden-text {
+    max-height: 1000px; 
+}
+
+.content__read-more {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    
+}
+
+.content__read-more::after {
+    content: attr(data-read); 
+    background-image: url(icon/read-more.svg);
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    cursor: pointer;
+  }
+
+section .content__input-checkbox:checked ~ .content__read-more::after {
+    content: attr(data-back);
+    background-image: url(icon/expand.svg);
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    cursor: pointer;
+
+  }
+
+h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7E82;
+
+}
+
+  @media  (max-width: 320px) {
+    html {
+        width: 100%;
+    }
+    .menu__call,
+    .menu__chat,
+    .menu__profile {
+        display: none;
+    }
+    .menu__repair {
+        position: absolute;
+        left: 208px;  
+    }
+    .menu__check {
+        position: absolute;
+        left: 264px;  
+    }
+    .content__photo-logo {
+        float: none;
+    }
+    main {
+        max-width: 100%;
+    }
+    .hidden-text{
+        max-height: 90px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .menu__gps{
+        position: absolute;
+        left: 72px;
+    }
+    .menu__menu {
+        position: absolute;
+        left: 16px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .content__photo-logo:first-child {
+    order: 1;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+
+
