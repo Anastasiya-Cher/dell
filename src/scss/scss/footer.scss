@@ -1,0 +1,39 @@
+.note {
+    width: 288px;
+    color: $black;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+   .note {
+    width: 481px;
+} 
+}
+
+.com-p {
+  color: $black;  
+  font-weight: 500;
+}
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: $border-swiper;
+    gap: 10%;
+}
+
+.main-footer p {
+     flex-grow: 1 30%;
+
+}
+.main-footer__last-p {
+     text-align: right;
+}
+
+@media (min-width: 1440px) {
+   .main-footer {
+    gap: 14%;
+   } 
+
+
+}

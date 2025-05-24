@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dell</title>
-    <link href="test.css" rel="stylesheet" type="text/css">
+    <link href="/scss/main.css" rel="stylesheet" type="text/css">
     <link href="font/stylesheet.css" rel="stylesheet" type="text/css">
     <meta name="referrer" content="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -13,17 +13,18 @@
 </head>
 <body> 
     <div id="blr-content">
-    <div class="hidden-menu">
-        <div class="bok-menu">
+    <div id="hidden-menu" class="hidden-menu">
+        <div id="bok-menu" class="bok-menu">
             <div class="header">
-                <a class="bok-menu__esc">
-                    <img src="icon/esc.svg" alt="esc"></a>
-                <a class="bok-menu__src">
+                <a id="bok-menu__esc" class="bok-menu__esc">
+                    <img src="icon/close.svg" alt="esc"></a>
+                <a id="bok-menu__src" class="bok-menu__src">
                     <img src="icon/search.svg" alt="search"></a>
             </div>
-            <div>
-                <h1>Ремонт техники</h1>
+            <div class="main-bok">
+                
                 <ul>
+                    <li>Ремонт техники</li>
                     <li>Услуги и сервисы</li>
                     
                     <li>Корпоративным клиентам</li>
@@ -47,14 +48,14 @@
     <div id="main-content"  class="main-content">
     <header>
         <nav class="menu">
-        <a class="menu__menu">
+        <a id="menu-open" class="menu__menu">
             <img src="icon/menu.svg" alt="menu">
         </a>
-        <a class="menu__gps">
+        <a id="menu__gps" class="menu__gps">
             <img src="icon/gps.svg">
         </a>
         <div class="menu_left">
-        <div class="footer">
+        <div id="footer" class="footer">
             <div class="footer__run-icon">
             <a class="bok-menu__call kyrs-el">
                 <img src="icon/call.svg " alt="call"></a>
@@ -62,7 +63,7 @@
                 <img src="icon/chat.svg" alt="chat"></a>
             <a class="bok-menu__profile kyrs-el">
                  <img src="icon/profile.svg" alt="profile"></a>
-            <div class="footer__contact">
+            <div id="footer__contact" class="footer__contact">
             <p class="mail-p">mail@cps.com</p>
             <p class="number">8 800 890 8900</p>
             <p class="lang"><span class="lang__ru">RU  </span><span>EN  </span><span>CH  </span></p>
@@ -220,6 +221,8 @@
 </div>
 
     <div id="modal-window" class="modal-window">
+        <div id="modal-bl" class="modal-bl"></div>
+        <div id="modal-content" class="modal-content">
         <div id="modal-btn-cls" class="modal-btn-cls"><img src="icon/close.svg"></div>
         <h1>Обратная связь</h1>
         <div class="forms">
@@ -230,6 +233,7 @@
         </div>
             <p>Нажимая "отправить" вы даете согласие на <span class="pers">обработку персональных данных</span> и соглашаетесь с нашей <span class="pers">политикой конфиденциальности</span></p>
         <div class="modal-btn"><img src="icon/send.svg"></div>
+        </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>

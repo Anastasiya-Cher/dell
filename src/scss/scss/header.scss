@@ -1,0 +1,68 @@
+nav {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    gap: 24px;
+}
+
+
+.menu_left {
+    display: flex;
+    gap: 24px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.menu__call,
+.menu__profile,
+.menu__chat {
+    display: none;
+}
+
+.menu__repair,
+.menu__check {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    font-size: 0;
+}
+
+@media (min-width: 768px) {
+    .menu__call,
+    .menu__profile,
+    .menu__chat {
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) { 
+    .menu__menu,
+    .menu__call,
+    .menu__profile,
+    .menu__chat {
+        display: none;
+    }
+    .menu__repair,
+    .menu__check {
+        font-size: 16px;  
+    }  
+    .hidden-menu {
+        left: 0px;
+    }
+    .main-content {
+        position: absolute;
+        left: 320px;
+        width: 1500px; 
+    }
+    nav {
+        float: right;
+    }
+    
+    .focus-point {
+   
+    }
+}
+.dop-menu__nav:hover {
+    border: solid 2px $hover-el;
+    border-radius: 6px;
+}

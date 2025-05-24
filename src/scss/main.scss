@@ -1,0 +1,15 @@
+@import "vars";
+@import "swiper";
+@import "table";
+@import "header";
+@import "bok-menu";
+@import "main-content";
+@import "modal-window";
+@import "footer";
+html {
+    box-sizing: border-box;
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #F8F8F8;
+}

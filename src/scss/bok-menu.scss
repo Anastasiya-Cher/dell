@@ -1,0 +1,158 @@
+.hidden-menu {
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    background-color: $main-backround 50%;
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 200;
+}
+.bok-menu {
+    position: fixed;
+    left: 0px;
+    width: 320px;
+    height: 100vh;
+    z-index: 201;
+    background-color: $main-backround;
+}
+.menu__gps {
+        position: fixed;
+        left: 90px;
+        top: 55px;
+        z-index: 300;
+        
+        
+    }
+.main-bok {
+    margin-top: 100px;
+}
+.bok-menu__esc {
+        position: fixed;
+        left: 15px;
+        top: 55px;
+        z-index: 300;
+        display: none;
+}
+.bok-menu__src {
+        position: fixed;
+        left: 256px;
+        top: 55px;
+        z-index: 300; 
+       
+}
+.hidden-menu .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 47px;
+}
+.footer {
+        position: fixed;
+        bottom: 20px;
+        left: -320px;
+
+    }
+.footer__run-icon {
+    gap: 5px;
+}
+.lang__ru {
+    color: $lang-gray; 
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .hidden-menu {
+        box-shadow: 10px 0 5px $lang-gray; 
+}
+.footer { 
+    position: static;
+
+}
+.footer__contact {
+    display: none;
+}
+.menu__gps {
+    position: static;
+
+}
+}
+
+@media (min-width: 1440px) { 
+    .hidden-menu {
+        position: fixed;
+        left: 0px;
+        margin-left: 0px;
+        width: 276px;
+        display: block;
+        z-index: 0;
+    }
+    .main-bok {
+        margin-top: 50px;
+    }
+    .bok-menu{
+        display: block;
+        background-color: none;
+    }
+    .hidden-menu h1 {
+        display: none;
+    }
+    .main-content {
+        position: absolute;
+        left: 306px;
+        width: 1380px; 
+    }
+    .bok-menu__esc {
+        display: none;
+    }
+    .menu__gps {
+        display: block;
+        left: 22px;
+        top: 30px;
+        
+    }
+    .bok-menu {
+        width: 276px;
+        margin-top: 88px;
+    
+    }
+    .bok-menu__src {
+        position: fixed;
+        left: 237px;
+        top: 35px;
+        display: block;
+    }
+    .footer {
+        position: fixed;
+        left: 5px;
+    }
+}
+.hidden-menu h1 {
+    background-image: url(icon/marker.svg);
+    background-repeat: no-repeat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-h; 
+
+}
+.number {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+ul {
+    margin-block-start: 0;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 0;
+ 
+}
+li {
+    margin-left: 0;
+    padding-left: 15px;
+}
+li:hover {
+    background-image: url(icon/marker.svg);
+    background-repeat: no-repeat;
+    color: $color-h; 
+}

@@ -1,0 +1,106 @@
+.main-content {
+    background-color: $main-backround;
+    padding: 32px;
+
+}
+.hidden-text{
+    max-height: 160px;
+    overflow: hidden;
+}
+
+.content__photo-logo {
+    float: right;
+    max-width: 360px;
+    object-fit: cover;
+
+}
+
+.dop-menu {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-h;  
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+@media (min-width: 1440px) {
+    .dop-menu {
+        white-space: wrap; 
+    }
+}
+
+h1 {
+    margin-left: -32px;
+    background-image: url(icon/marker.svg);
+    background-repeat: no-repeat;
+    font-size: 28px;
+    font-weight: 700;
+    background-position: 0;
+    padding: 32px;
+
+
+    
+
+
+}
+.content__input-checkbox {
+    display: none;
+}
+
+.content__input-checkbox:checked ~ .hidden-text {
+    max-height: 1000px; 
+}
+
+.content__read-more {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    
+}
+
+
+.content__read-more::after {
+    content: attr(data-read); 
+    background-image: url(icon/read-more.svg);
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    cursor: pointer;
+  }
+
+section .content__input-checkbox:checked ~ .content__read-more::after {
+    content: attr(data-back);
+    background-image: url(icon/expand.svg);
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    cursor: pointer;
+
+  }
+
+h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 56px;
+    height: 56px;
+    background-image: linear-gradient(90deg, $main-backround ,$white 50%);
+    margin-top: 50px;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__photo-logo:first-child {
+    order: 1;
+    }
+    img {
+        max-width: 100%;
+    }
+ @media (min-width: 768px) {
+    section {
+        display: block;
+ }
+}

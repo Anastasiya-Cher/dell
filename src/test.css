@@ -4,6 +4,7 @@ html {
     font-family: "TT Lakes";
     font-size: 14px;
     font-weight: 400;
+    background-color: #F8F8F8;
 }
 /* хедер */
 nav {
@@ -76,12 +77,46 @@ nav {
 }
 /* скрытое меню*/
 .hidden-menu {
-    width: 320px;
-    position: absolute;
-    left: -320px;
+    width: 100vw;
+    position: fixed;
     height: 100vh;
-
-
+    background-color: #F8F8F8 50%;
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 200;
+}
+.bok-menu {
+    position: fixed;
+    left: 0px;
+    width: 320px;
+    height: 100vh;
+    z-index: 201;
+    background-color: #F8F8F8;
+}
+.menu__gps {
+        position: fixed;
+        left: 90px;
+        top: 55px;
+        z-index: 300;
+        
+        
+    }
+.main-bok {
+    margin-top: 100px;
+}
+.bok-menu__esc {
+        position: fixed;
+        left: 15px;
+        top: 55px;
+        z-index: 300;
+        display: none;
+}
+.bok-menu__src {
+        position: fixed;
+        left: 256px;
+        top: 55px;
+        z-index: 300; 
+       
 }
 .hidden-menu .header {
     display: flex;
@@ -89,10 +124,10 @@ nav {
     margin-bottom: 47px;
 }
 .footer {
-        position: absolute;
+        position: fixed;
         bottom: 20px;
         left: -320px;
-       
+
     }
 .footer__run-icon {
     gap: 5px;
@@ -112,6 +147,10 @@ nav {
 .footer__contact {
     display: none;
 }
+.menu__gps {
+    position: static;
+
+}
 }
 
 @media (min-width: 1440px) { /* скрытое меню*/
@@ -120,7 +159,15 @@ nav {
         left: 0px;
         margin-left: 0px;
         width: 276px;
-        
+        display: block;
+        z-index: 0;
+    }
+    .main-bok {
+        margin-top: 50px;
+    }
+    .bok-menu{
+        display: block;
+        background-color: none;
     }
     .hidden-menu h1 {
         display: none;
@@ -134,9 +181,10 @@ nav {
         display: none;
     }
     .menu__gps {
-        position: fixed;
+        display: block;
         left: 22px;
         top: 30px;
+        
     }
     .bok-menu {
         width: 276px;
@@ -147,6 +195,7 @@ nav {
         position: fixed;
         left: 237px;
         top: 35px;
+        display: block;
     }
     .footer {
         position: fixed;
@@ -492,13 +541,21 @@ color: rgb(255, 255, 255);
 
 /* модальное окно*/
 .modal-window {
+    display: none;
+    z-index: 100;
+    position: fixed;
+}
+.modal-content {
     width: 320px;
-    z-index: 2;
+    z-index: 102;
     position: fixed;
     background-color: #F8F8F8;
     height: 100%;
     display: none;
 }
+
+
+
 .modal-btn-cls {
     margin-left: 16px;
     margin-top: 24px;
@@ -544,20 +601,29 @@ textarea::placeholder {
 .modal-window p {
     color: #7E7E82;
 }
-.modal-window {
-    right: 200px;
-    padding-left: 5px;
-    backdrop-filter: blur(5px);
- }
 
 @media  (min-width: 768px) {
  .modal-window {
-    right: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     padding-left: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
-    
  }
-
+.modal-btn-cls {
+    position: absolute;
+    left: -70px;
+}
+.modal-content {
+    width: 440px;
+    padding: 5px;
+    right: 0px;
+}
+input,
+textarea {
+    width: 376px;
+}
 }
 
 

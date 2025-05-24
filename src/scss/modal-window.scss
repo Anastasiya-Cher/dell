@@ -1,0 +1,86 @@
+.modal-window {
+    display: none;
+    z-index: 100;
+    position: fixed;
+}
+.modal-content {
+    width: 320px;
+    z-index: 102;
+    position: fixed;
+    background-color: $main-backround;
+    height: 100%;
+    display: none;
+}
+
+
+
+.modal-btn-cls {
+    margin-left: 16px;
+    margin-top: 24px;
+}
+.modal-window h1 {
+ margin: 0px;
+ padding: 0px;
+ padding-left: 32px;
+ margin-top: 20px;
+}
+input {
+    
+    border-radius: 8px;
+    border: 1px solid $ea;
+    height: 48px;
+    width: 288px;
+    margin-top: 20px;
+
+}
+
+.forms input::placeholder {
+    color: $forms;
+    text-indent: 10px;
+    font-size: 16px;
+
+    
+}
+textarea {
+    border-radius: 8px;
+    border: 1px solid $ea;
+    height: 118px;
+    width: 288px;
+    margin-top: 20px;  
+}
+textarea::placeholder {
+    color: $forms;
+    text-indent: 10px;
+    font-size: 16px;
+}
+.pers {
+    color: $rose;
+}
+.modal-window p {
+    color: $border-swiper;
+}
+
+@media  (min-width: 768px) {
+ .modal-window {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    background-color: $main-backround;
+    backdrop-filter: blur(5px);
+ }
+.modal-btn-cls {
+    position: absolute;
+    left: -70px;
+}
+.modal-content {
+    width: 440px;
+    padding: 5px;
+    right: 0px;
+}
+input,
+textarea {
+    width: 376px;
+}
+}
+
