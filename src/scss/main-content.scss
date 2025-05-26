@@ -33,7 +33,7 @@
 
 h1 {
     margin-left: -32px;
-    background-image: url(icon/marker.svg);
+    background-image: url(../icon/marker.svg);
     background-repeat: no-repeat;
     font-size: 28px;
     font-weight: 700;
@@ -63,7 +63,7 @@ h1 {
 
 .content__read-more::after {
     content: attr(data-read); 
-    background-image: url(icon/read-more.svg);
+    background-image: url(../icon/read-more.svg);
     background-repeat: no-repeat;
     padding-left: 32px;
     cursor: pointer;
@@ -71,7 +71,7 @@ h1 {
 
 section .content__input-checkbox:checked ~ .content__read-more::after {
     content: attr(data-back);
-    background-image: url(icon/expand.svg);
+    background-image: url(../icon/expand.svg);
     background-repeat: no-repeat;
     padding-left: 32px;
     cursor: pointer;

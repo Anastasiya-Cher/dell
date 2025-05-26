@@ -231,9 +231,10 @@ nav {
   position: fixed;
   left: 0px;
   width: 320px;
-  height: 100vh;
+  height: 110vh;
   z-index: 201;
   background-color: #f8f8f8;
+  box-shadow: 20px 0px 20px #7E7E82;
 }
 
 .menu__gps {
@@ -330,7 +331,7 @@ nav {
   }
   .bok-menu {
     width: 276px;
-    margin-top: 88px;
+    padding-top: 88px;
   }
   .bok-menu__src {
     position: fixed;
@@ -344,7 +345,7 @@ nav {
   }
 }
 .hidden-menu h1 {
-  background-image: url(icon/marker.svg);
+  background-image: url(../icon/marker.svg);
   background-repeat: no-repeat;
   font-weight: 500;
   font-size: 16px;
@@ -410,7 +411,7 @@ li:hover {
 }
 h1 {
   margin-left: -32px;
-  background-image: url(icon/marker.svg);
+  background-image: url(../icon/marker.svg);
   background-repeat: no-repeat;
   font-size: 28px;
   font-weight: 700;
@@ -434,7 +435,7 @@ h1 {
 
 .content__read-more::after {
   content: attr(data-read);
-  background-image: url(icon/read-more.svg);
+  background-image: url(../icon/read-more.svg);
   background-repeat: no-repeat;
   padding-left: 32px;
   cursor: pointer;
@@ -442,7 +443,7 @@ h1 {
 
 section .content__input-checkbox:checked ~ .content__read-more::after {
   content: attr(data-back);
-  background-image: url(icon/expand.svg);
+  background-image: url(../icon/expand.svg);
   background-repeat: no-repeat;
   padding-left: 32px;
   cursor: pointer;
@@ -477,17 +478,19 @@ img {
 }
 .modal-window {
   display: none;
-  z-index: 100;
+  z-index: 400;
   position: fixed;
 }
 
 .modal-content {
   width: 320px;
-  z-index: 102;
+  z-index: 402;
   position: fixed;
   background-color: #f8f8f8;
   height: 100%;
   display: none;
+  box-shadow: -12px 10px 10px #7E7E82;
+  right: 0px;
 }
 
 .modal-btn-cls {
@@ -544,8 +547,9 @@ textarea::placeholder {
     width: 100%;
     height: 100%;
     padding-left: 5px;
-    background-color: #f8f8f8;
+    background-color: #f8f8f8 50%;
     backdrop-filter: blur(5px);
+    right: 0px;
   }
   .modal-btn-cls {
     position: absolute;
